@@ -18,8 +18,11 @@ Untagged: dzwicker/docker-youtrack@sha256:03c1113c6b1ec9bfb17
 Deleted: sha256:96df251c60a4ae934f60bff3159c5a198fe9a3fa91da31f51026a0426cf82b46
 ```
 
-3. Create a named container, example 'youtrack'
+3. Delete all
 
 ```
-
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
 ```
