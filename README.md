@@ -3,6 +3,8 @@
 1. List images
 
 ```
+$ docker images
+############################
 sudo docker images --all
 REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
 hello-world                latest              05a3bd381fc2        10 hours ago        1.84kB
@@ -28,6 +30,7 @@ docker rmi $(docker images -q)
 ```
 
 4. Connect to container
+
 ```
 sudo docker exec -it youtrack sh
 ```
